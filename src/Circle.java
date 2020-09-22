@@ -10,6 +10,7 @@ public class Circle {
 
     public Circle(double radius) {
         this.radius = radius;
+        this.color = "red";
     }
 
     public Circle(double radius, String color) {
@@ -18,11 +19,30 @@ public class Circle {
     }
 
     public double getRadius() {
-        return radius;
+        return this.radius;
     }
 
     public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String toString() {
+        return "Circle{" +
+               "radius=" + radius +
+                ", color=" + color +
+                "}";
+    }
+
+    public double getArea() {
+        return radius*radius*Math.PI;
     }
     
 }
